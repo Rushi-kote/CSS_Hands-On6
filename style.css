@@ -1,0 +1,220 @@
+body{
+    background-image: url(./shara_desert.jpg);
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation {
+    height: 120px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navigation ul{ 
+    display: inline-block;
+    padding: 0;
+}
+
+.navigation li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: 0;
+    font-size: 18px;
+    
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+#logo{
+    display: inline;
+    background-image: url(./logo.png);
+    height: 100%;
+    width: 130px;
+    background-repeat: no-repeat;
+
+}
+
+.menu{
+    width: 400px;
+}
+
+.menu span{
+    padding-left: 20px;
+    text-align: center;
+}
+
+.main-flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    /* outline: solid red 2px; */
+}
+
+.flex-container-sahara{
+    /* outline: solid red 2px; */
+    text-align: left;
+    width: 600px;
+    margin-left: 30px;
+}
+
+#heading{
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.flex-container-sahara p{
+    color: white;
+}
+
+button{
+    padding:10px 55px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 600;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    height: auto;
+    /* position: relative; */
+    /* left: 650px;
+    top: -300px; */
+    flex-direction: row;
+    /* outline: solid black 2px; */
+    gap: 30px;
+}
+
+.flex-item{
+    height: 300px;
+    width: 340px;
+    border-radius: 10px;
+   
+    padding-left: 20px;
+
+    
+}
+
+.flex-item:hover{
+    transform: translateY(-10px);
+}
+
+.flex-item h1{
+    font-weight: 600;
+    color: white;
+}
+
+.flex-item p{
+    
+    color: white;
+}
+
+.item1{
+    background-image: url(./Western_Desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item2{
+    background-image: url(./al-bagawat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item3{
+    background-image: url(./pyramid-of-giza.jpg);
+    /* margin-top: 20px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4{
+    background-image: url(./kalhari_desert.jpg);
+    /* margin-top: 20px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (min-width:360px) and (max-width:640px){
+    .navigation li{
+        display: block;
+    }
+    .menu{
+        text-align: left;
+        width: 200px;
+    }
+
+    .main-flex-container{
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100vw;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .flex-container{
+        /* outline: solid pink 2px; */
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .flex-container-sahara{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+    .flex-container{
+        /* outline: solid pink 2px; */
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .flex-item{
+        height: 300px;
+        width: 60%;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:900px){
+
+    .main-flex-container{
+        flex-direction: row;
+        flex-grow: 1;
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
